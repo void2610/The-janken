@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Janken</title>
+</head>
+<body>
+
+  <input type="submit" value="グー" onclick="p = 1; guu()">
+  <input type="submit" value="チョキ" onclick="p = 2; choki()">
+  <input type="submit" value="パー" onclick="p = 3; paa()">
+
+  <script>
+  	let n =(Math.random()*3+1)>>0
+  	let p = 1
+    
+    var guu = function () {
+      if (n==1) {
+        alert("drow")
+      }
+      else if(n==2){
+        alert("win")
+      }
+      else{
+        alert("lose")
+      }
+    }
+
+        var choki = function () {
+      if (n==1) {
+        alert("lose")
+      }
+      else if(n==2){
+        alert("drow")
+      }
+      else{
+        alert("win")
+      }
+    }
+
+        var paa = function () {
+      if (n==1) {
+        alert("win")
+      }
+      else if(n==2){
+        alert("lose")
+      }
+      else{
+        alert("drow")
+      }
+    }
+    
+
+  </script>
+</body>
+</html>
